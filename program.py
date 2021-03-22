@@ -13,21 +13,19 @@ img = cv2.imread('img/img.jpg', 0)
 #===: Testing Functions :===#
 
 # Show original image
+print("\n=== Print Original Image ===")
 imgProc.original(img)
 
 # Show greyscale image
+print("\n=== Print Greyscale Image ===")
 imgProc.greyscale(img)
 cv2.imwrite('out/img-greyscale.jpg', img)
 
 # Resize the image
+print("\n=== Print Resized Image ===")
 SIZE = 32
 img = cv2.resize(img, (SIZE,SIZE))
 cv2.imwrite('out/img32x32.jpg', img)
-
-# Show resized original image
-imgProc.original(img)
-
-# Show resized greyscale image
 imgProc.greyscale(img)
 
 
