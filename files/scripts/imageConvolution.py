@@ -1,6 +1,6 @@
 import cv2 
 import numpy as np
-import imageProcessing as imgProc
+from . import imageProcessing as imgProc
 
 # In order to get the best result, the image used should be GREYSCALE
 def convolve(image, kernel, padding=0, strides=1):
